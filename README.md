@@ -33,5 +33,11 @@ Aqui se muestran las librerias usadas en este proyecto
 
 <img src="src/stock/librerias.png" alt="Captura Login" width="400" height="400">
 
+##Conexion
+
+Se uso mongoDB una base de datos no sql para almacenar los datos generados en el proyecto. Se uso un pool de Conexiones para administrar de mejor manera cada una de las transacciones; mongodb cuenta con su propio pool a diferencia de las bases de datos sql en la cuales es necesario incorporar la libreria externa de apache. 
+<img src="src/stock/loginCaptura.png" alt="Captura Login" width="400" height="600">
+
+
 <img src="src/stock/loginCaptura.png" alt="Captura Login" width="400" height="400">
 
