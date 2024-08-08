@@ -10,7 +10,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        
+
         Conexion.conexion();
             JFrame frame = new JFrame("login");
             frame.setContentPane(new login().loginPanel);

@@ -12,6 +12,7 @@ public class CardProd extends JPanel{
     private JLabel precioLbl;
     private JTextArea descTxt;
     private JLabel idLbl;
+    private JLabel stock;
 
     public CardProd(ProductoDTO productoDTO){
         add(cardPanel);
@@ -21,6 +22,7 @@ public class CardProd extends JPanel{
 
         idLbl.setText(productoDTO.getId());
         nomLbl.setText(productoDTO.getNombreProd());
+        stock.setText("Cantidad:"+productoDTO.getStock());
         precioLbl.setText("Precio: $"+productoDTO.getPrecio());
         descTxt.setText(productoDTO.getDescripcion());
     }
