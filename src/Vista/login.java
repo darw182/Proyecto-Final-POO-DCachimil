@@ -19,14 +19,13 @@ public class login {
     private JTextField passTxt;
     private JButton sesionBtn;
     private JButton salirButton;
-    private CajeroControlador cajeroControlador;
-    private ProductoControlador productoControlador;
-    private VentasControlador ventasControlador;
+
+
 
     public login(){
-        this.cajeroControlador = new CajeroControlador();
-        this.productoControlador = new ProductoControlador();
-        //this.ventasControlador = new VentasControlador();
+
+
+
         Image logoImg = new ImageIcon("./src/img/logoMarket.png").getImage();
         ImageIcon logoEscalado = new ImageIcon(logoImg.getScaledInstance(300,150,Image.SCALE_SMOOTH));
         logo.setIcon(logoEscalado);
@@ -34,6 +33,8 @@ public class login {
 
        roles.setModel(new DefaultComboBoxModel<>(TipoUsuario.values()));
         LoginControlador loginControlador = new LoginControlador();
+        ProductoControlador productoControlador =new ProductoControlador();
+        VentasControlador ventasControlador = new VentasControlador();
         sesionBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -58,7 +59,7 @@ public class login {
                             JFrame frame = new JFrame("PanelCajero");
                             frame.setContentPane(new VistaCajero(productoControlador, ventasControlador).principalPanel);
                             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                            frame.setResizable(false);
+                            //frame.setResizable(false);
                             frame.setLocationRelativeTo(null);
                             frame.pack();
                             frame.setVisible(true);

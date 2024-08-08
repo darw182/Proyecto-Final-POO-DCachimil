@@ -11,7 +11,8 @@ import java.util.List;
 public class VentasControlador {
     private MongoCollection<Document> ventas;
 
-    public VentasControlador(MongoDatabase database){
+    public VentasControlador(){
+        MongoDatabase database = Conexion.getDatabase();
         ventas = database.getCollection("ventas");
     }
 

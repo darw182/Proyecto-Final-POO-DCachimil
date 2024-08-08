@@ -11,29 +11,32 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
-public class VistaCajero extends JFrame{
+public class VistaCajero {
     public JPanel principalPanel;
     private JScrollPane scrollPanel;
     private JPanel productoPanel;
     private JComboBox productos;
-    private JTextField textField1;
-    private JLabel cantidadTxt;
+    private JTextField cantidadTxt;
     private JTextField nombreTxt;
     private JButton venderBtn;
-    private ProductoControlador productoControlador;
-    private VentasControlador ventasControlador;
+    ProductoControlador productoControlador = new ProductoControlador();
+    VentasControlador ventasControlador = new VentasControlador();
 
 
     public VistaCajero(ProductoControlador productoControlador, VentasControlador ventasControlador){
-        this.productoControlador = this.productoControlador;
-        this.ventasControlador = this.ventasControlador;
 
+
+
+        this.productoControlador = productoControlador;
+        this.ventasControlador = ventasControlador;
+
+        /*
         setTitle("Cajero");
-        setSize(800,600);
+        setSize(800,1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setContentPane(principalPanel);
-
+*/
         productoPanel.setLayout(new GridLayout(0,3,10,10));
 
         loadProductData();
