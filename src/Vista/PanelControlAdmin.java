@@ -29,5 +29,22 @@ public class PanelControlAdmin {
                 }
             }
         });
+        admStockBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame frame = new JFrame("Panel Admin Productos");
+                frame.setContentPane(new AdminStock().panelAdminStock);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setResizable(false);
+                frame.setLocationRelativeTo(null);
+                frame.pack();
+                frame.setVisible(true);
+
+                JFrame frameAdmin = (JFrame) SwingUtilities.getWindowAncestor(PanelControl);
+                if (frameAdmin != null) {
+                    frameAdmin.dispose();
+                }
+            }
+        });
     }
 }

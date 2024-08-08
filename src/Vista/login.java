@@ -1,7 +1,10 @@
 package Vista;
 
 import Modelo.TipoUsuario;
+import controlador.CajeroControlador;
 import controlador.LoginControlador;
+import controlador.ProductoControlador;
+import controlador.VentasControlador;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,8 +19,14 @@ public class login {
     private JTextField passTxt;
     private JButton sesionBtn;
     private JButton salirButton;
+    private CajeroControlador cajeroControlador;
+    private ProductoControlador productoControlador;
+    private VentasControlador ventasControlador;
 
     public login(){
+        this.cajeroControlador = new CajeroControlador();
+        this.productoControlador = new ProductoControlador();
+        //this.ventasControlador = new VentasControlador();
         Image logoImg = new ImageIcon("./src/img/logoMarket.png").getImage();
         ImageIcon logoEscalado = new ImageIcon(logoImg.getScaledInstance(300,150,Image.SCALE_SMOOTH));
         logo.setIcon(logoEscalado);
@@ -38,6 +47,16 @@ public class login {
                         if (tipoUsuario == TipoUsuario.ADMINISTRADOR){
                             JFrame frame = new JFrame("PanelControlAdmin");
                             frame.setContentPane(new PanelControlAdmin().PanelControl);
+                            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                            frame.setResizable(false);
+                            frame.setLocationRelativeTo(null);
+                            frame.pack();
+                            frame.setVisible(true);
+                        }else{
+
+
+                            JFrame frame = new JFrame("PanelCajero");
+                            frame.setContentPane(new VistaCajero(productoControlador, ventasControlador).principalPanel);
                             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                             frame.setResizable(false);
                             frame.setLocationRelativeTo(null);

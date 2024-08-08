@@ -20,6 +20,7 @@ public class AdminCajeros {
     private JButton actualizarButton;
     private JTextArea textArea;
     private JTextField idTxt;
+    private JButton panelControlButton;
     //private CajeroControlador cajero;
 
     public AdminCajeros() {
@@ -79,6 +80,24 @@ public class AdminCajeros {
                             .append("\n");
                 }
                 textArea.setText(sb.toString());
+            }
+        });
+
+        panelControlButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame frame = new JFrame("PanelControlAdmin");
+                frame.setContentPane(new PanelControlAdmin().PanelControl);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setResizable(false);
+                frame.setLocationRelativeTo(null);
+                frame.pack();
+                frame.setVisible(true);
+
+                JFrame frameAdmin = (JFrame) SwingUtilities.getWindowAncestor(panelAdminCaj);
+                if (frameAdmin != null) {
+                    frameAdmin.dispose();
+                }
             }
         });
     }
