@@ -15,7 +15,7 @@ Para este proyecto se use el patron modelo-vista-controlador porque nos permite 
 
 Aqui muestro la estructura del proyecto:
 
-
+<img src="src/img/conformacion.png" alt="Captura proyecto" width="400" height="400">
 
 <img src="src/img/loginCaptura.png" alt="Captura Login" width="400" height="400">
 
