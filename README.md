@@ -15,29 +15,53 @@ Para este proyecto se use el patron modelo-vista-controlador porque nos permite 
 
 Aqui muestro la estructura del proyecto:
 
-<img src="src/stock/conformacion.png" alt="Captura proyecto" width="400" height="400">
+<img src="src/img/conformacion.png" alt="Captura proyecto" width="400" height="400">
 
 Estructura del controlador:
 
-<img src="src/stock/controlador.png" alt="Captura" width="400" height="400">
+<img src="src/img/controlador.png" alt="Captura" width="400" height="400">
 
 Estructura del modelo:
 
-<img src="src/stock/Modelo.png" alt="Captura" width="400" height="400">
+<img src="src/img/Modelo.png" alt="Captura" width="400" height="400">
 
 Estructura de la vista:
 
-<img src="src/stock/vista.png" alt="Captura" width="400" height="400">
+<img src="src/img/vista.png" alt="Captura" width="400" height="400">
 
 Aqui se muestran las librerias usadas en este proyecto
 
-<img src="src/stock/librerias.png" alt="Captura Login" width="400" height="400">
+<img src="src/img/librerias.png" alt="Captura Login" width="400" height="400">
 
 ##Conexion
 
 Se uso mongoDB una base de datos no sql para almacenar los datos generados en el proyecto. Se uso un pool de Conexiones para administrar de mejor manera cada una de las transacciones; mongodb cuenta con su propio pool a diferencia de las bases de datos sql en la cuales es necesario incorporar la libreria externa de apache. 
-<img src="src/stock/loginCaptura.png" alt="Captura Login" width="400" height="600">
+
+<img src="src/img/conexion.png" alt="Captura Login" width="400" height="600">
+
+Estas son las colecciones en mongoDb:
+
+<img src="src/img/colecciones.png" alt="Captura Login" width="400" height="400">
 
 
-<img src="src/stock/loginCaptura.png" alt="Captura Login" width="400" height="400">
+##Vistas del proyecto
 
+Login:
+
+<img src="src/img/loginCaptura.png" alt="Captura Login" width="400" height="400">
+
+Panel de control:
+
+<img src="src/img/panelControl.png" alt="Captura Login" width="400" height="500">
+
+Panel de administracion de cajeros:
+
+<img src="src/img/adminCajero.png" alt="Captura Login" width="400" height="500">
+
+Panel de administracion de stock:
+
+<img src="src/img/adminVendedor.png" alt="Captura Login" width="400" height="500">
+
+Pantalla de stock:
+
+<img src="src/img/stock.png" alt="Captura Login" width="400" height="500">
