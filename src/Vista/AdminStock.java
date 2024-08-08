@@ -30,7 +30,7 @@ public class AdminStock {
             public void actionPerformed(ActionEvent e) {
 
 
-                String paquete = "/img/";
+                String paquete = "/stock/";
                 String imgNombre = JOptionPane.showInputDialog("Ingrese el nombre de la imagen");
 
                 if (imgNombre != null){

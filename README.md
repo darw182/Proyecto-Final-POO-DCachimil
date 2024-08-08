@@ -15,23 +15,23 @@ Para este proyecto se use el patron modelo-vista-controlador porque nos permite 
 
 Aqui muestro la estructura del proyecto:
 
-<img src="src/img/conformacion.png" alt="Captura proyecto" width="400" height="400">
+<img src="src/stock/conformacion.png" alt="Captura proyecto" width="400" height="400">
 
 Estructura del controlador:
 
-<img src="src/img/controlador.png" alt="Captura" width="400" height="400">
+<img src="src/stock/controlador.png" alt="Captura" width="400" height="400">
 
 Estructura del modelo:
 
-<img src="src/img/Modelo.png" alt="Captura" width="400" height="400">
+<img src="src/stock/Modelo.png" alt="Captura" width="400" height="400">
 
 Estructura de la vista:
 
-<img src="src/img/vista.png" alt="Captura" width="400" height="400">
+<img src="src/stock/vista.png" alt="Captura" width="400" height="400">
 
 Aqui se muestran las librerias usadas en este proyecto
 
-<img src="src/img/librerias.png" alt="Captura Login" width="400" height="400">
+<img src="src/stock/librerias.png" alt="Captura Login" width="400" height="400">
 
-<img src="src/img/loginCaptura.png" alt="Captura Login" width="400" height="400">
+<img src="src/stock/loginCaptura.png" alt="Captura Login" width="400" height="400">
 
