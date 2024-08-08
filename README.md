@@ -4,6 +4,6 @@
 #Minmarket
 El presente proyecto tiene como objetivo desarrollar un sistema de gestión integral para un minimarket utilizando los principios de la Programación Orientada a Objetos (POO). 
 
-![Captura del Login](src/img/loginCaptura.png)
-<img src="src/img/loginCaptura.png" alt="Descripción de la imagen" width="200" height="100">
+
+<img src="src/img/loginCaptura.png" alt="Captura Login" width="400" height="400">
 
